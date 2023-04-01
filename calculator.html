@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            .form1{
+                    border: 2px solid;
+                    width:230px;
+                    height:495px;
+                    margin:auto;
+                    border-color: black;
+                    background-color: rgb(205, 187, 223);
+                    
+            }
+            h1{
+                text-align: center;
+                color: blueviolet;
+                font-size: 50px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #box{
+                width:225px;
+                font-size: 25px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-color: rgb(118, 7, 221);
+            }
+            input{
+                width:70px;
+                height:50px;
+                margin: 2px;
+                font-size: 25px;
+            }
+            #clear{
+                width:225px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><u><b>Calculator</b></u></h1>
+        <div class="form1">
+        <form name="formstyle">
+        <input type="text" name="inputfield" id="box">
+        <br>
+        <br>
+        
+        <input type="button" value="1" onclick="formstyle.inputfield.value +='1'">
+        <input type="button" value="2" onclick="formstyle.inputfield.value +='2'">
+        <input type="button" value="3" onclick="formstyle.inputfield.value +='3'">
+        <br>
+        <br>
+        <input type="button" value="4" onclick="formstyle.inputfield.value +='4'">
+        <input type="button" value="5" onclick="formstyle.inputfield.value +='5'">
+        <input type="button" value="6" onclick="formstyle.inputfield.value +='6'">
+        <br>
+        <br>
+    
+        <input type="button" value="7" onclick="formstyle.inputfield.value +='7'">
+        <input type="button" value="8" onclick="formstyle.inputfield.value +='8'">
+        <input type="button" value="9" onclick="formstyle.inputfield.value +='9'">
+        <br>
+        <br>
+        <input type="button" value="+" onclick="formstyle.inputfield.value +='+'">
+        <input type="button" value="0" onclick="formstyle.inputfield.value +='0'">
+        <input type="button" value="-" onclick="formstyle.inputfield.value +='-'">
+        <br>
+        <br>
+        <input type="button" value="*" onclick="formstyle.inputfield.value +='*'">
+        <input type="button" value="/" onclick="formstyle.inputfield.value +='/'">
+        <input type="button" value="=" onclick="formstyle.inputfield.value = eval(formstyle.inputfield.value)">
+        <br>
+        <br>
+        <input type="button" value="Clear All" onclick="formstyle.inputfield.value= ''" id="clear">
+        </form>
+        </body>
+    </div>
+    </body>
+</html>
